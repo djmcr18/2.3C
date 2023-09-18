@@ -169,21 +169,22 @@ const toggleShow = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; Remove this line */
     min-height: 100vh;
   }
 
   .event-handling {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Add this line */
+  }
 
-.transition-text {
-  font-size: 24px;
-  margin-top: 1rem;
-  color: #3366cc;
-  text-align: center; /* Center the text horizontally */
-}
+  .transition-text {
+    font-size: 24px;
+    margin-top: 1rem;
+    color: #3366cc;
+    text-align: center; /* Center the text horizontally */
+  }
 }
 </style>
